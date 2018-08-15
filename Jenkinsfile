@@ -38,24 +38,21 @@ node {
 //        build job: 'build-docker-image', parameters: [string(name: 'imagename', value: "myimage" ), string(name: 'parentJobName', value: "myjob"), string(name: 'projectVersion', value: "myproject"),string(name: 'technicalBuildVersion', value: "first"), booleanParam(name: 'isLatest', value: true )], propagate: true, wait: true
 //    }
 
-    stage('e2e tests') {
-
-            sh "bash src/main/e2e/run-e2e-tests.sh"
-        
-    }
+//    stage('e2e tests') {
+//
+//            sh "bash src/main/e2e/run-e2e-tests.sh"
+//
+//    }
 
     stage('start app') {
-        ansiColor('xterm') {
-            sh "./gradlew bootRun"
-        }
-    }
-
-    stage('gatling load tests') {
-        try {
+            steps{
+                sh "./gradlew bootRun"
+            }
+        steps{
             sh "./gradlew gatlingRun"
-        } catch(err) {
-            throw err
         }
+
+
     }
 
 }
