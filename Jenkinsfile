@@ -45,12 +45,11 @@ node {
 //    }
 
     stage('start app') {
-            steps{
+
                 sh "./gradlew bootRun"
-            }
-        steps{
+
             sh "./gradlew gatlingRun"
-        }
+
 
 
     }
