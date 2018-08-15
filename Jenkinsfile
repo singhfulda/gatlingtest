@@ -39,9 +39,9 @@ node {
 //    }
 
     stage('e2e tests') {
-        ansiColor('xterm') {
+
             sh "bash src/main/e2e/run-e2e-tests.sh"
-        }
+        
     }
 
     stage('start app') {
