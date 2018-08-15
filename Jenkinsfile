@@ -15,9 +15,7 @@ node {
 
     stage('clean') {
         sh "./gradlew clean"
-        sh "./gradlew npm_prune"
     }
-
 
     stage('npm install') {
         sh "./gradlew npmInstall"
@@ -25,7 +23,7 @@ node {
 
     stage('build war'){
 
-        sh "./gradlew bootRepackage -Pprod -Preleaseversion=${projectVersion}"
+        sh "./gradlew bootRepackage -Pprod"
     }
 
     stage('archiveArtifacts'){
@@ -37,7 +35,7 @@ node {
     }
 
     stage('build docker'){
-        build job: 'build-docker-image', parameters: [string(name: 'imagename', value: imageName ), string(name: 'parentJobName', value: "${JOB_NAME}"), string(name: 'projectVersion', value: "${projectVersion}"),string(name: 'technicalBuildVersion', value: "${technicalBuildVersion}"), booleanParam(name: 'isLatest', value: params.isSnapshot )], propagate: true, wait: true
+        build job: 'build-docker-image', parameters: [string(name: 'imagename', value: imageName ), string(name: 'parentJobName', value: "myjob"), string(name: 'projectVersion', value: "myproject"),string(name: 'technicalBuildVersion', value: "first"), booleanParam(name: 'isLatest', value: true )], propagate: true, wait: true
     }
 
     stage('e2e tests') {
