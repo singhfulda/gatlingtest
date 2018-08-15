@@ -34,9 +34,9 @@ node {
         archiveArtifacts artifacts: 'build/docker/**'
     }
 
-    stage('build docker'){
-        build job: 'build-docker-image', parameters: [string(name: 'imagename', value: "myimage" ), string(name: 'parentJobName', value: "myjob"), string(name: 'projectVersion', value: "myproject"),string(name: 'technicalBuildVersion', value: "first"), booleanParam(name: 'isLatest', value: true )], propagate: true, wait: true
-    }
+//    stage('build docker'){
+//        build job: 'build-docker-image', parameters: [string(name: 'imagename', value: "myimage" ), string(name: 'parentJobName', value: "myjob"), string(name: 'projectVersion', value: "myproject"),string(name: 'technicalBuildVersion', value: "first"), booleanParam(name: 'isLatest', value: true )], propagate: true, wait: true
+//    }
 
     stage('e2e tests') {
         ansiColor('xterm') {

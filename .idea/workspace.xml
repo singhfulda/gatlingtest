@@ -265,8 +265,8 @@
       <file leaf-file-name="Jenkinsfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="271">
+              <caret line="39" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -320,7 +320,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1592" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
     <option name="height" value="1176" />
@@ -340,7 +340,13 @@
             <path>
               <item name="gatlingtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="gatlingtest" type="462c0819:PsiDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatlingtest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatlingtest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -452,15 +458,15 @@
       <workItem from="1533635142698" duration="1420000" />
       <workItem from="1534142660284" duration="3095000" />
       <workItem from="1534229913651" duration="3290000" />
-      <workItem from="1534325737398" duration="1394000" />
+      <workItem from="1534325737398" duration="1561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9199000" />
+    <option name="totallyTimeSpent" value="9366000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
+    <frame x="1592" y="-8" width="1616" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -476,7 +482,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3237548" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.053341903" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25642672" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -631,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="271">
+          <caret line="39" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="39" />
         </state>
       </provider>
     </entry>
