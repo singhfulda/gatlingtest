@@ -17,9 +17,9 @@ node {
         sh "./gradlew clean"
     }
 
-    stage('npm install') {
-        sh "./gradlew npmInstall"
-    }
+//    stage('npm install') {
+//        sh "./gradlew npmInstall"
+//    }
 
     stage('build war'){
 
