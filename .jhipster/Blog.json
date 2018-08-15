@@ -1,0 +1,13 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [],
+    "changelogDate": "20180530114820",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "blog",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "jhipsterGatlingTestApplication",
+    "searchEngine": false
+}
